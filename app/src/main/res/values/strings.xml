@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Trendsetter</string>
+
+    <!-- Content Descriptions -->
+    <string name="icon_content_description">Illustrative Icon</string>
+
+    <!-- Dashboard Labels -->
+    <string name="revenue_generated_label">Revenue</string>
+    <string name="tourists_visiting_label">Tourists</string>
+
+    <!-- Placeholder Data -->
+    <string name="revenue_generated_placeholder">28,000</string>
+    <string name="tourists_visiting_placeholder">12,000</string>
+    <string name="username">Username</string>
+    <string name="jaipur">Jaipur</string>
+    <string name="udaipur">Udaipur</string>
+    <string name="bikaner">Bikaner</string>
+    <string name="mount_abu">Mount Abu</string>
+    <string name="jaipur_revenue">15,000</string>
+    <string name="jaipur_tourists">4,000</string>
+
+    <!-- NavBar Strings -->
+    <string name="dashboard">Dashboard</string>
+    <string name="upload_data">Upload Data</string>
+    <string name="view_revenue_estimates">View Revenue Estimates</string>
+    <string name="view_map">View Map</string>
+    <string name="view_trend">View Trends</string>
+    <string name="account">Account</string>
+    <string name="login">Login</string>
+    <string name="settings">Settings</string>
+
+    <!-- TableHeaders -->
+    <string name="place_name">Place Name</string>
+    <string name="revenue">Revenue Generated</string>
+    <string name="tourists">Tourists Visiting</string>
+
+    <!-- API Keys -->
+    <string name="mapbox_access_token">
+        sk.eyJ1IjoibmloaXRiMDYiLCJhIjoiY2prMnF2NXFrMHNtcDNxbXF1MjZwc21zaSJ9.PUMJ0HCm0H-rLJ-E0bqOTA
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

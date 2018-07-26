@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/mainMenu"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard_white_24dp"
+            android:title="@string/dashboard" />
+
+        <item
+            android:id="@+id/uploadData"
+            android:icon="@drawable/ic_file_upload_white_24dp"
+            android:title="@string/upload_data" />
+
+        <item
+            android:id="@+id/viewRevenueEstimates"
+            android:icon="@drawable/ic_rupee_white"
+            android:title="@string/view_revenue_estimates" />
+
+        <item
+            android:id="@+id/viewMap"
+            android:icon="@drawable/ic_map_white_24dp"
+            android:title="@string/view_map" />
+
+        <item
+            android:id="@+id/viewTrend"
+            android:icon="@drawable/ic_trending_up_black_24dp"
+            android:title="@string/view_trend" />
+
+    </group>
+
+    <group
+        android:id="@+id/accountMenu"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/ic_login_white_24dp"
+            android:title="@string/login" />
+
+    </group>
+
+    <group
+        android:id="@+id/settingsMenu"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:title="@string/settings" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/padding_margin_small"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_list_triple_line"
+    style="@style/AppTheme.ClickableView">
+
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:src="@drawable/ic_account_circle_primary_24dp"
+        android:layout_width="@dimen/size_image_avatar"
+        android:layout_height="@dimen/size_image_avatar"
+        android:contentDescription="@string/icon_content_description" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:text="@string/username"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/size_text_heading"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/padding_margin_default"
+        android:layout_marginStart="@dimen/padding_margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivProfilePicture"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRevenueGenerated"
+            app:cardBackgroundColor="@color/colorRallyRed"
+            android:layout_margin="@dimen/padding_margin_default"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_list_double_line_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cardTouristsVisiting"
+            style="@style/AppTheme.ClickableView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivRevenueGenerated"
+                    android:src="@drawable/ic_rupee_rally_red"
+                    android:background="@drawable/drawable_background_oval"
+                    android:padding="@dimen/padding_margin_small"
+                    android:layout_width="@dimen/size_image_default"
+                    android:layout_height="@dimen/size_image_default"
+                    android:contentDescription="@string/icon_content_description" />
+
+                <TextView
+                    android:id="@+id/tvRevenueGenerated"
+                    android:text="@string/revenue_generated_placeholder"
+                    android:textSize="@dimen/size_text_default"
+                    android:textColor="?android:textColorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/padding_margin_default"
+                    android:layout_marginStart="@dimen/padding_margin_default"
+                    android:layout_marginRight="@dimen/padding_margin_default"
+                    android:layout_marginEnd="@dimen/padding_margin_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/ivRevenueGenerated" />
+
+                <TextView
+                    android:id="@+id/tvRevenueGeneratedLabel"
+                    android:text="@string/revenue_generated_label"
+                    android:textSize="@dimen/size_text_supporting"
+                    android:textColor="?android:textColorSecondary"
+                    android:layout_marginLeft="@dimen/padding_margin_default"
+                    android:layout_marginStart="@dimen/padding_margin_default"
+                    android:layout_marginRight="@dimen/padding_margin_default"
+                    android:layout_marginEnd="@dimen/padding_margin_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tvRevenueGenerated"
+                    app:layout_constraintStart_toEndOf="@id/ivRevenueGenerated" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTouristsVisiting"
+            app:cardBackgroundColor="@color/colorRallyPurple"
+            android:layout_margin="@dimen/padding_margin_default"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_list_double_line_avatar"
+            app1:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardRevenueGenerated"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/AppTheme.ClickableView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivTouristsVisiting"
+                    android:src="@drawable/ic_group_rally_purple_24dp"
+                    android:background="@drawable/drawable_background_oval"
+                    android:padding="@dimen/padding_margin_small"
+                    android:layout_width="@dimen/size_image_default"
+                    android:layout_height="@dimen/size_image_default"
+                    android:contentDescription="@string/icon_content_description" />
+
+                <TextView
+                    android:id="@+id/tvTouristsVisiting"
+                    android:text="@string/tourists_visiting_placeholder"
+                    android:textSize="@dimen/size_text_default"
+                    android:textColor="?android:textColorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/padding_margin_default"
+                    android:layout_marginStart="@dimen/padding_margin_default"
+                    android:layout_marginRight="@dimen/padding_margin_default"
+                    android:layout_marginEnd="@dimen/padding_margin_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/ivTouristsVisiting" />
+
+                <TextView
+                    android:id="@+id/tvTouristsVisitingLabel"
+                    android:text="@string/tourists_visiting_label"
+                    android:textSize="@dimen/size_text_supporting"
+                    android:textColor="?android:textColorSecondary"
+                    android:layout_marginLeft="@dimen/padding_margin_default"
+                    android:layout_marginStart="@dimen/padding_margin_default"
+                    android:layout_marginRight="@dimen/padding_margin_default"
+                    android:layout_marginEnd="@dimen/padding_margin_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tvTouristsVisiting"
+                    app:layout_constraintStart_toEndOf="@id/ivTouristsVisiting" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTrendGraph"
+            android:layout_margin="@dimen/padding_margin_default"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_size"
+            app:layout_constraintTop_toBottomOf="@id/cardTouristsVisiting"
+            style="@style/AppTheme.ClickableView">
+
+            <ImageView
+                android:src="@drawable/ic_img"
+                android:scaleType="fitXY"
+                android:padding="@dimen/padding_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/icon_content_description" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMap"
+            android:layout_marginTop="@dimen/padding_margin_small"
+            android:layout_marginLeft="@dimen/padding_margin_default"
+            android:layout_marginStart="@dimen/padding_margin_default"
+            android:layout_marginRight="@dimen/padding_margin_small"
+            android:layout_marginEnd="@dimen/padding_margin_small"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/card_size"
+            app:layout_constraintTop_toBottomOf="@id/cardTrendGraph"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cardPieChart"
+            style="@style/AppTheme.ClickableView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/state_icon"
+                    android:padding="@dimen/padding_margin_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/icon_content_description" />
+
+                <ImageView
+                    android:src="@drawable/ic_place_accent_24dp"
+                    android:layout_width="@dimen/size_image_default"
+                    android:layout_height="@dimen/size_image_default"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPieChart"
+            android:layout_marginTop="@dimen/padding_margin_small"
+            android:layout_marginLeft="@dimen/padding_margin_small"
+            android:layout_marginStart="@dimen/padding_margin_small"
+            android:layout_marginRight="@dimen/padding_margin_default"
+            android:layout_marginEnd="@dimen/padding_margin_default"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/card_size"
+            app:layout_constraintTop_toBottomOf="@id/cardTrendGraph"
+            app:layout_constraintStart_toEndOf="@id/cardMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/AppTheme.ClickableView">
+
+            <ImageView
+                android:src="@drawable/pie_chart_icon"
+                android:padding="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/icon_content_description" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTopPlaces"
+            android:layout_marginTop="@dimen/padding_margin_small"
+            android:layout_marginLeft="@dimen/padding_margin_default"
+            android:layout_marginStart="@dimen/padding_margin_default"
+            android:layout_marginRight="@dimen/padding_margin_default"
+            android:layout_marginEnd="@dimen/padding_margin_default"
+            android:layout_marginBottom="@dimen/padding_margin_xl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cardPieChart"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <TextView
+                        android:text="@string/place_name"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/revenue"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/tourists"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                </TableRow>
+
+                <View
+                    android:background="#212121"
+                    android:layout_marginLeft="@dimen/padding_margin_small"
+                    android:layout_marginStart="@dimen/padding_margin_small"
+                    android:layout_marginRight="@dimen/padding_margin_small"
+                    android:layout_marginEnd="@dimen/padding_margin_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <TableRow style="@style/AppTheme.ClickableView">
+
+                    <TextView
+                        android:text="@string/jaipur"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/jaipur_revenue"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/jaipur_tourists"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                </TableRow>
+
+                <TableRow style="@style/AppTheme.ClickableView">
+
+                    <TextView
+                        android:text="@string/udaipur"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/jaipur_revenue"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/jaipur_tourists"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                </TableRow>
+
+                <TableRow style="@style/AppTheme.ClickableView">
+
+                    <TextView
+                        android:text="@string/bikaner"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/jaipur_revenue"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/jaipur_tourists"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                </TableRow>
+
+                <TableRow style="@style/AppTheme.ClickableView">
+
+                    <TextView
+                        android:text="@string/mount_abu"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/jaipur_revenue"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                    <TextView
+                        android:text="@string/jaipur_tourists"
+                        android:textStyle="bold"
+                        android:padding="@dimen/padding_margin_small" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
